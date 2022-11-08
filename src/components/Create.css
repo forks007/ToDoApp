@@ -1,0 +1,61 @@
+.create {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.create label {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  margin: 8px 4px;
+}
+.create h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea {
+  display: block;
+  margin: 0 2rem;
+  padding: 0.8rem;
+  font-size: 2rem;
+  font-family: inherit;
+  width: 20em;
+  border: 2px solid rgb(47, 45, 45);
+  /* border-bottom: 2px solid #fff; */
+  border-radius: 0.5rem;
+  background-color: transparent;
+  resize: none;
+  color: #fff;
+
+  overflow: auto;
+}
+.create input:focus,
+.create textarea:focus,
+.create textarea:valid,
+.create input:valid {
+  outline: none;
+  border: 2px #19682c solid;
+}
+.create textarea {
+  height: 10em;
+}
+.create textarea::-webkit-scrollbar {
+  width: 5px;
+  background-color: #19682c;
+}
+
+.create textarea::-webkit-scrollbar-thumb {
+  background: #000;
+}
+/* .create button {
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+} */

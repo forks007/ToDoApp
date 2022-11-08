@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --primary-color: #19682c;
+  --primary-light: #4c9756;
+  --primary-dark: #003c02;
+  --secondary-color: #ffaf10;
+  --secondary-dark: #c68000;
+  --secondary-light: #ffe150;
+  --font-color-light: #f1356d;
+  --font-color-dark: #910001;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  font-weight: bold;
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #19682c;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+.App {
+  width: 80vw;
+  min-height: 100vh;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+  .App {
+    width: 100vw;
+    /* font-size: 72.5%; */
+  }
+}
