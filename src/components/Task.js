@@ -4,7 +4,6 @@ import { useLocation, Link } from "react-router-dom";
 import "./Task.css";
 
 export default function Task({ title }) {
-  // const navigate = useNavigate();
   const context = useContext(TaskContext);
   const {
     tasks,
@@ -25,7 +24,6 @@ export default function Task({ title }) {
     filteredTasks = tasks?.filter((task) => task.status === "finished");
   }
 
-  // console.log("location",location);
 
   return (
     <div>
