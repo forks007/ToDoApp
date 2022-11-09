@@ -12,7 +12,6 @@ export const TaskContext = React.createContext();
 export default function App() {
   const [reload, setReload] = useState({});
   const [tasks, setTasks] = useState([]);
-  // const navigate = useNavigate();
 
   const fetchQuote = async () => {
     try {
@@ -31,9 +30,7 @@ export default function App() {
     axios
       .patch(`http://localhost:9000/todos/${task.id}`, { status: "ongoing" })
       .then(() => {
-        // check if res.status
         setReload({});
-        // navigate(`/ongoing`);
       })
       .catch((err) => {
         console.log(err);
@@ -44,19 +41,17 @@ export default function App() {
       .patch(`http://localhost:9000/todos/${task.id}`, { status: "finished" })
       .then(() => {
         setReload({});
-        // navigate(`/finished`);
       })
       .catch((err) => {
         console.log(err);
       });
   };
   const handleReset = (task) => {
-    task.status = "new"; //
+    task.status = "new"; 
     axios
       .patch(`http://localhost:9000/todos/${task.id}`, { status: "new" })
       .then(() => {
         setReload({});
-        // navigate(`/`);
       })
       .catch((err) => {
         console.log(err);
@@ -66,7 +61,6 @@ export default function App() {
     axios
       .delete(`http://localhost:9000/todos/${id}`)
       .then((res) => {
-        console.log(res);
         if (res.status === 200) {
           setReload({});
         }
@@ -74,6 +68,9 @@ export default function App() {
       .catch((err) => {
         console.log(err);
       });
+  };
+  const handleReload = () => {
+    setReload({});
   };
   return (
     <BrowserRouter>
@@ -83,7 +80,8 @@ export default function App() {
           handleDelete: handleDelete,
           handleReset: handleReset,
           handleFinish: handleFinish,
-          handleStart: handleStart
+          handleStart: handleStart,
+          handleReload: handleReload
         }}
       >
         <div className="App">
