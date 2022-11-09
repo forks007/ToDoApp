@@ -43,6 +43,15 @@
 .create textarea {
   height: 10em;
 }
+
+
+@media screen and (max-width: 800px) {
+  .create input,
+  .create textarea {
+    width:15em ;
+  }
+}
+
 .create textarea::-webkit-scrollbar {
   width: 5px;
   background-color: #19682c;
