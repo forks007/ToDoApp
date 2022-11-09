@@ -7,12 +7,8 @@
 }
 .menu a {
   text-decoration: none;
-  color: #fff;
   font-size: 1.5em;
   border-bottom: 2px solid #000000;
-}
-.menu a.active {
-  background-color: #000000;
 }
 .menu li {
   text-decoration: none;
