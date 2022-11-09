@@ -49,11 +49,10 @@ button:active {
 button:focus {
   outline: none;
 }
-/* bro take color consideration from a palate */
+
 .edit {
   position: absolute;
   background-color: #19682c;
-  /* color: #000000; */
   top: 2px;
   right: 2px;
 }
