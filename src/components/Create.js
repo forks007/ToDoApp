@@ -1,9 +1,12 @@
+import { useContext } from "react";
+import { TaskContext } from "../App";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Create.css";
 
 const Create = () => {
+  const { handleReload } = useContext(TaskContext);
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
   const [isPending, setIsPending] = useState(false);
@@ -19,6 +22,7 @@ const Create = () => {
       data: task
     }).then(() => {
       setIsPending(false);
+      handleReload();
       navigate(`/`);
     });
   };
