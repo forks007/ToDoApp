@@ -1,9 +1,12 @@
+import { useContext } from "react";
+import { TaskContext } from "../App";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./Create.css";
 
 const Edit = () => {
+  const { handleReload } = useContext(TaskContext);
   const { taskId } = useParams();
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
@@ -34,6 +37,7 @@ const Edit = () => {
       })
       .then(() => {
         setIsPending(false);
+        handleReload();
         navigate(-1);
       });
   };
