@@ -26,7 +26,6 @@
   font-family: inherit;
   width: 20em;
   border: 2px solid rgb(47, 45, 45);
-  /* border-bottom: 2px solid #fff; */
   border-radius: 0.5rem;
   background-color: transparent;
   resize: none;
@@ -52,10 +51,4 @@
 .create textarea::-webkit-scrollbar-thumb {
   background: #000;
 }
-/* .create button {
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-} */
+
