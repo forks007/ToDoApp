@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "title": "Learn a new thing.",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, veritatis.",
+      "status": "ongoing"
+    },
+    {
+      "id": 3,
+      "title": "Learn React JS",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, veritatis.",
+      "status": "finished"
+    },
+    {
+      "id": 4,
+      "title": "Learn Redux Basics(edited)",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, veritatis.",
+      "status": "new"
+    },
+    {
+      "id": 5,
+      "title": "Learn Redux fundamentals test",
+      "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, veritatis.",
+      "status": "new"
+    },
+    {
+      "title": "this is testing new ",
+      "text": "h dki f  hdsdh sudhsdh dshdh sd usdhs",
+      "status": "new",
+      "id": 6
+    }
+  ]
+}

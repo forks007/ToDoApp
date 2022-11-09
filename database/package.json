@@ -1,0 +1,14 @@
+{
+  "name": "server-todos",
+  "description": "Example in memory todos api with json-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Farhan Ahmed",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
